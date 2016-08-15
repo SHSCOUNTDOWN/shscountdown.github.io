@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SHS Countdown</title>
+
+        <style>
+        /*Title bar stuff*/
+            ul {
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                font-family:"arial";
+                margin: -10px -10px -10px -10px;
+                display: block;
+                box-shadow: 0px 3px 5px #000000;
+            }
+            
+            .active {
+                background-color: #E45641;
+            }
+
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color: #070707;
+            }
+            
+            /*Processing stuff*/
+            canvas { 
+        		display: block; 
+        		outline: 0px; 
+        		margin-bottom: 0em;
+        	    
+        	}
+        	#content { 
+        	    margin: 13px -10px -10px -10px;
+        	    height: 100%;
+        		width: calc(100% + 20px); min-width: 100%; overflow: auto;
+        		border-left: 0px solid #444; border-top: 0px solid #444; 
+        		border-right: 0px solid #333; border-bottom: 0px solid #333;
+        		background-color: #3d3d3d;
+        		overflow-x:none;
+        	}
+        	
+        	.info{
+        	    margin: -15px -10px -10px -10px;
+        	    font-family:"arial";
+        	    padding-left: 10%;
+        	}
+            
+            h1{
+                padding-left:-10%;
+            }
+
+        </style>
+        
+        <script src="processing.js" type="text/javascript"></script>
+		<script type="text/javascript">
+        // convenience function to get the id attribute of generated sketch html element
+        function getProcessingSketchId () { return 'Flocking'; }
+        </script>
+    </head>
+    
+    <body>
+        <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="android.html">Android App</a></li>
+              <li><a href="classic.html">Classic Ver.</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="faq.html">FAQ</a></li>
+        </ul>
+		
+		<div class="info">
+		    <br>
+		    <center>
+		        <h1>FAQ</h1>
+		    </center>
+            <p><b>When's the apple app coming out?</b><br>
+            It's not because I need a mac and an apple account to compile, which I don't have (Apple sucks lel)</p>
+            
+            <p><b>I found a bug/want to submit a feature suggestion</b><br>
+            Scroll down on the home page, there should be a link for that there.</p>
+            
+            <p><b>What language is this written in?</b><br>
+            Processing/processing.js, a language based off of Java/javascript</p>
+            
+            <p><b>The timer is wrong</b></b><br>
+            Manual sync it. School time is constantly changing.</p>
+            
+            <p><b>How can I see old features?</b><br>
+            Click the classic version at the top, then click the version below.</p>
+            
+            <p><b>I got a seziure watching this!</b><br>
+            I don't think I added that feature...</p>
+		</div>
+
+    </body>
+</html>
