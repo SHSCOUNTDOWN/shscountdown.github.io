@@ -126,6 +126,9 @@ void setup(){
     
     back_select = new BackSelector();
     back_select.selected = save.back;
+    
+    if(time.TIMESHIFT > 10000)
+        time.TIMESHIFT = time.TIMESHIFTDEFAULT;
 
 }
 
