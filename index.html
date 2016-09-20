@@ -2,7 +2,13 @@
 <html>
     <head>
         <title>SHS Countdown</title>
-
+	
+	<meta property="og:url"           content="https://shscountdown.github.io" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="SHSCOUNTDOWN" />
+	<meta property="og:description"   content="A countdown timer for school." />
+	<meta property="og:image"         content="https://shscountdown.github.io/img/main.png" />
+  
         <style>
         /*Title bar stuff*/
             ul {
@@ -72,6 +78,16 @@
     </head>
     
     <body>
+    	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) return;
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+
+    	
         <ul>
               <li><a class="active" href="index.html">Home</a></li>
               <li><a href="android.html">Android App</a></li>
@@ -100,6 +116,8 @@
 		        the information you need. <br> Prefer fullscreen? Click <a href="fullscreen.html">here</a></p>
                 <br>
                 <b>Like this service? Share it with your friends!</b>
+                <div class="fb-quote"></div>
+                
                 <p>APP ICONS FOR SOCIAL MEDIA HERE!</p>
                 <br>
                 <p>SUBMIT SUGGESTIONS/BUGS HERE :)</p>
