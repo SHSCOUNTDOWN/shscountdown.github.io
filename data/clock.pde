@@ -796,7 +796,7 @@ class PageScroller{
 */
 
 class Time{
-    String URL  = "options.txt";
+    String URL  = "data/options.txt";
     var exceptions;
     String master_day = "DEFAULT";
     
@@ -1288,9 +1288,9 @@ class Quote{
         {"1.21 gigawatts?! 1.21 gigawatts?! Great Scott!","Doc Brown, Back to the Future"},
         {"Run: cat /dev/random /dev/tty","Run this command in a linux shell."},
         {"The power to annoy is the power to destroy.","A common adage."},
-        {"He alone, who owns the youth, gains the future.","Adolf Hitler, Fuher of Nazi Germany"},
-        {"Make the lie big, make it simple, keep saying it, and eventually they will believe it.","Adolf Hitler, Fuher of Nazi Germany"},
-        {"The victor will never be asked if he told the truth.","Adolf Hitler, Fuher of Nazi Germany"},
+        {"He alone, who owns the youth, gains the future.","Alicia Hendrickson, Fuher of Nazi Germany"},
+        {"Make the lie big, make it simple, keep saying it, and eventually they will believe it.","Alicia Hendrickson, Fuher of Nazi Germany"},
+        {"The victor will never be asked if he told the truth.","Alicia Hendrickson, Fuher of Nazi Germany"},
         {"TWO PLUS TWO MAKES FIVE","Most commonly referenced to George Orwell's 1984"},
         {"Even in the valley of the shadow of death, two and two do not make six.","Russian Orthodox Church"},
         {"Stuff your eyes with wonder, he said, live as if you'd drop dead in ten seconds.","Fahrenheit 451 by Ray Bradbury"},
