@@ -147,7 +147,9 @@ void draw(){
     }
     
     background(50);
-    image(backgrounds[ back_select.selected ],0,0,sizeX,sizeY);
+    
+    try{ image(backgrounds[ back_select.selected ],0,0,sizeX,sizeY);
+    }catch(e){}
     
     pushMatrix();
     translate(scroll,0); //scroll
@@ -214,8 +216,8 @@ void draw(){
     text( "REAL TIME: " + time.get_time_str() + " ----- SCH. TIME: " + time.get_fake_time_str()  , sizeX/2, sizeY*0.4 + sizeX/20 + height_n*4 + sizeX*3/40);
 
     //Background selector button
-    image( back_button, sizeX*0.93 - sizeX*0.025, sizeY*0.9 - sizeX*0.025, sizeX*0.05, sizeX*0.05);
-
+    try{ image( back_button, sizeX*0.93 - sizeX*0.025, sizeY*0.9 - sizeX*0.025, sizeX*0.05, sizeX*0.05);
+    }catch(e){}
     
 
     /*PAGE2
