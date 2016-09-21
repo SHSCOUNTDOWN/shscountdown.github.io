@@ -212,7 +212,7 @@ void draw(){
     
     textSize(sizeX/60); textAlign(LEFT,BOTTOM);
     text( "TIME TILL CLASS ENDS ", sizeX*0.55, sizeY*0.4 + sizeX/20 + height_n*4 + sizeX/40);
-    text( "TODAY IS " ((time.get_day == "A" || time.get_day == "E") ? "AN" : "A") + time.get_day() + " DAY ("  + round(time.schoolPercent()*10000)/100 + "% DONE)"      , sizeX*0.55, sizeY*0.4 + sizeX/20 + height_n*4 + sizeX*1.7/40);
+    text( "TODAY IS " + ((time.get_day == "A" || time.get_day == "E") ? "AN " : "A ") + time.get_day() + " DAY ("  + round(time.schoolPercent()*10000)/100 + "% DONE)"      , sizeX*0.55, sizeY*0.4 + sizeX/20 + height_n*4 + sizeX*1.7/40);
     text( time.get_today()  , sizeX*0.55, sizeY*0.4 + sizeX/20 + height_n*4 + sizeX*2.4/40);
     
     textAlign(CENTER,CENTER);
