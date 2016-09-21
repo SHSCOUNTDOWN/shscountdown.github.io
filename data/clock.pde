@@ -104,14 +104,7 @@ void setup(){
     
     custom_day_selector = new Multilist( ["ABCD","E DAY", "HALF", "MIDTERM", "PARCC", "PARCC2", "DEFAULT"], color(#F44336));
     not_delay_selector  = new Multilist( ["30 SECONDS", "45 SECONDS", "1 MINUTE", "2 MINUTES", "3 MINUTES"], color(#F44336));
-    
-    while(!time.TIMESHIFT){ 
-        save = new Save(time.TIMESHIFT);
-        time.TIMESHIFT = save.TIMESHIFT;
-        notification_class.selected = save.notification;
-        time.CLASSTIMEMAX = save.CLASSTIMEMAX;
-    }
-    
+
     backgrounds.push(
         requestImage("img/forest.jpg"),
         requestImage("img/lake.jpg"),
@@ -130,9 +123,13 @@ void setup(){
     back_select = new BackSelector();
     back_select.selected = save.back;
     
+    save = new Save(time.TIMESHIFT);
+    time.TIMESHIFT = save.TIMESHIFT;
+    notification_class.selected = save.notification;
+    time.CLASSTIMEMAX = save.CLASSTIMEMAX;
+    
     if(time.TIMESHIFT > 10000)
         time.TIMESHIFT = time.TIMESHIFTDEFAULT;
-    console.log(time.TIMESHIFTDEFAULT);
 
 }
 
