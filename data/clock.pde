@@ -129,6 +129,7 @@ void setup(){
     
     if(time.TIMESHIFT > 10000)
         time.TIMESHIFT = time.TIMESHIFTDEFAULT;
+    console.log(time.TIMESHIFTDEFAULT);
 
 }
 
