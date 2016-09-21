@@ -827,8 +827,6 @@ class Time{
     
     Time(){
         exceptions = obtainExceptions();
-        TIMESHIFT = 3600*5 + 28*60;
-        
         school_start = new Day(9,8,"START");
     }
     
