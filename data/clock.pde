@@ -121,7 +121,8 @@ void setup(){
         requestImage("img/lights.jpg"),
         requestImage("img/space.jpg"),
         requestImage("img/fractal.jpg"),
-        requestImage("img/city.jpg")
+        requestImage("img/city.jpg"),
+        requestImage("img/commie.jpg")
     );
     
     back_select = new BackSelector();
@@ -142,12 +143,10 @@ void draw(){
         sizeX = window.innerWidth;
         sizeY = window.innerHeight;
     }
-    if(sizeY > sizeX){
-        //Shitty rotation mechanics :)
-        translate(sizeX/2,sizeY/2);
-        rotate(PI/2);
-        translate(-sizeX/2,-sizeY/2);
-
+    
+    if(day() == 1 && month() == 4){ //APRIL FOOLS!
+        rotate(PI);
+        translate(-sizeX,-sizeY);
     }
     
     background(50);
