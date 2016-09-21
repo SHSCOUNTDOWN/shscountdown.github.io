@@ -107,7 +107,7 @@ void setup(){
     custom_day_selector = new Multilist( ["ABCD","E DAY", "HALF", "MIDTERM", "PARCC", "PARCC2", "DEFAULT"], color(#F44336));
     not_delay_selector  = new Multilist( ["30 SECONDS", "45 SECONDS", "1 MINUTE", "2 MINUTES", "3 MINUTES"], color(#F44336));
         
-    save = new Save(time.TIMESHIFT);
+    save = new Save(227);
     time.TIMESHIFT = save.TIMESHIFT;
     notification_class.selected = save.notification;
     time.CLASSTIMEMAX = save.CLASSTIMEMAX;
