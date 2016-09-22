@@ -80,8 +80,7 @@ void setup(){
     quote = new Quote();
     
     notifications = new NotificationCenter();
-    notifications.add(new Notification(color(0,0,0,150),"Don't like military time? Not my problem. Also blame github for bugs, my c9 one works bug free.","NOTICE",3));
-    notifications.add(new Notification(color(0,0,0,150),"Some bugs such as NaN time and no notifications are probably casued by github sorry.","BUG NOTICE",3));
+    notifications.add(new Notification(color(0,0,0,150),"READ THE NEW TERMS AND CONDITIONS (SCROLL DOWN)!!!","NOTICE",3));
     notifications.add(new Notification(color(0,0,0,150),NEWS_TODAY[1],NEWS_TODAY[0],3));
     if(time.get_day() == "A" || time.get_day() == "B" || time.get_day() == "C" || time.get_day() == "D")
         notifications.add(new Notification(color(0,0,0,150),"Lab reminder for anyone who has lab the second half of lunch.","LAB REMINDER",1));
