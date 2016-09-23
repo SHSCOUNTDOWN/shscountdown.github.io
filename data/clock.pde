@@ -1320,6 +1320,7 @@ class Quote{
         {"The end is never the end is never the end is never the end...","Stanley Parable"},
         {"You look quite well for a man that's been 'utterly destroyed","Spock, Star Trek"},
         {"If there's nothing wrong with me... maybe there's something wrong with the universe!","Dr. Crusher, Star Trek the Next Generation"},
+        {"The worst part is not knowing. The second worst part is knowing","Me After First AP Exam"},
     };
  
     Quote(){}
