@@ -80,7 +80,7 @@ void setup(){
     quote = new Quote();
     
     notifications = new NotificationCenter();
-    notifications.add(new Notification(color(0,0,0,150),"To sync to new time click'SYNC' and click OK","NOTICE",3));
+    notifications.add(new Notification(color(0,0,0,150),"To sync to new time click 'SYNC' and click OK","NOTICE",3));
     notifications.add(new Notification(color(0,0,0,150),"READ THE NEW TERMS AND CONDITIONS (SCROLL DOWN)!!! (You auto agree by using)","NOTICE",3));
     notifications.add(new Notification(color(0,0,0,150),NEWS_TODAY[1],NEWS_TODAY[0],3));
     if(time.get_day() == "A" || time.get_day() == "B" || time.get_day() == "C" || time.get_day() == "D")
