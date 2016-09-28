@@ -720,7 +720,7 @@ class NotificationCenter{
                 rect(x, y+ h*i + i*sizeX/320, sizeX/20,sizeX/20);
                 
                 fill(255);
-                text("i", x+sizeX/100+sizeX/80, y + sizeX/80 + h*i + i*sizeX/320);
+                text("i", x+sizeX/100+sizeX/80, y + sizeX/80 + h*i + i*sizeX/320, sizeX*0.8, sizeY);
                 noFill(); stroke(255);
                 ellipse(x+sizeX/40, y + sizeX/80 + h*i + i*sizeX/320 + sizeX/80, sizeX/35,sizeX/35);
             }
