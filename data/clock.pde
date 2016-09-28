@@ -78,6 +78,7 @@ void setup(){
     time = new Time();
     scroller = new PageScroller(3);
     quote = new Quote();
+    facts = loadStrings("data/facts.txt");
     
     notifications = new NotificationCenter();
     notifications.add(new Notification(color(0,0,0,150),"To sync to new time click 'SYNC' and click OK","NOTICE",3));
@@ -93,7 +94,7 @@ void setup(){
     for(int i=0;i<n.length;i++){
         notifications.add( n[i] );
     }
-    notifications.add(new Notification(color(0,0,0,150),"I lost my text file of 3000 random facts :(","RANDOM FACT",4));
+    notifications.add(new Notification(color(0,0,0,150),facts[new Date().getMilliseconds()%facts.length] ,"RANDOM FACT",4));
     
     frameRate(1200); //To avoid lag use MAX CPU!!! (Valid programming not bad code ;P)
 
