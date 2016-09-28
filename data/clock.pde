@@ -94,10 +94,7 @@ void setup(){
         notifications.add( n[i] );
     }
     
-    String fact = "vaufhnakjdghljashgljagghajksfdnjlksafasdfklajfsklfjlalkdsfjaskdfjsaklfjklafjdkas;jfklsaljfkas"*20;
-    while( fact.length() > 150){
-        fact = facts[new Date().getMilliseconds()%facts.length];
-    }
+    fact = facts[new Date().getMilliseconds()%facts.length];
     notifications.add(new Notification(color(0,0,0,150), fact ,"RANDOM FACT",4));
     
     frameRate(1200); //To avoid lag use MAX CPU!!! (Valid programming not bad code ;P)
