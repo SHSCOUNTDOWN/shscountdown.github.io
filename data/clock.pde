@@ -134,7 +134,7 @@ void setup(){
     
     if(time.TIMESHIFT > 10000)
         time.TIMESHIFT = time.TIMESHIFTDEFAULT;
-    time.timeSHIFT = 0;
+    time.timeSHIFT = 8;
 
 }
 
