@@ -1,5 +1,5 @@
 //Time shift, how slow school time is in seconds. Negative means faster
-TIMESHIFT:0
+TIMESHIFT:49
 //Used to be 227 ^^
 //Exceptions to school year formatting
 //FORMATTED AS FOLLOWS:
